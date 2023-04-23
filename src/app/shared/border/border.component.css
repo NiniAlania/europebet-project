@@ -1,0 +1,6 @@
+.border {
+    background: #171718;
+    position: relative;
+    border: #25292B solid 4px;
+    border-radius: 16px;
+}
