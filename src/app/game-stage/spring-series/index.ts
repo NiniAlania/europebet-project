@@ -1,0 +1,1 @@
+export { SpringSeriesModule } from './spring-series.module';

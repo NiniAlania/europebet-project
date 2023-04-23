@@ -1,0 +1,12 @@
+<app-border>
+    <div bar>
+    </div>
+    <div content>
+        <app-leaderboard [items]="items"></app-leaderboard>
+        <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+        </app-paragraph>
+        <app-leaderboard [items]="items"></app-leaderboard>
+        <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+        </app-paragraph>
+    </div>-
+</app-border>
