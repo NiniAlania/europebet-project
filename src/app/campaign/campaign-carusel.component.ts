@@ -9,25 +9,41 @@ import { Campaign } from './campaign.model';
 export class CampaignCaruselComponent {
   campaigns: Campaign[] = [
     {
-      imageUrl: '/assets/campaign1.jpg',
+      imageUrl: '/assets/campaign1.png',
       title: 'Get 300% Cashback',
-      description: 'retrieve 300% bet amount as real money only here'
+      description: 'retrieve 300% bet amount as real money only here',
+      color: '13, 100, 155'
     },
     {
-      imageUrl: '/assets/campaign2.jpg',
+      imageUrl: '/assets/campaign2.png',
       title: 'Coming Soon',
-      description: 'retrieve 300% bet amount as real money only here'
+      description: 'retrieve 300% bet amount as real money only here',
+      color: '239, 84, 28'
     },
     {
-      imageUrl: '/assets/campaign3.jpg',
+      imageUrl: '/assets/campaign3.png',
       title: 'Win a Jackpot',
-      description: 'retrieve 300% bet amount as real money only here'
+      description: 'retrieve 300% bet amount as real money only here',
+      color: '26, 23, 108'
     },
     {
-      imageUrl: '/assets/campaign1.jpg',
+      imageUrl: '/assets/campaign1.png',
       title: 'Get 300% Cashback',
-      description: 'retrieve 300% bet amount as real money only here'
+      description: 'retrieve 300% bet amount as real money only here',
+      color: '13, 100, 155'
     },
+    {
+      imageUrl: '/assets/campaign2.png',
+      title: 'Get 300% Cashback',
+      description: 'retrieve 300% bet amount as real money only here',
+      color: '239, 84, 28'
+    },
+    {
+      imageUrl: '/assets/campaign3.png',
+      title: 'Win a Jackpot',
+      description: 'retrieve 300% bet amount as real money only here',
+      color: '26, 23, 108'
+    }
   ];
 
   constructor() { }

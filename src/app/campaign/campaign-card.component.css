@@ -1,7 +1,33 @@
 .campaign-card {
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 233px;
-    height: 272px;
     border-radius: 5px;
+    overflow: hidden;
+    width: 280px;
+    height: 300px;
+}
+
+.campaign-card .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 19px 24px;
+    color: #fff;
+}
+
+.campaign-card .overlay .title {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.campaign-card .overlay .description {
+    margin: 0;
+    font-size: 14px;
 }

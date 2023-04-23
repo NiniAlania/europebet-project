@@ -1,4 +1,8 @@
-<p>მსგავსი აქციები</p>
-<div class="campaign-carusel">
-    <app-campaign-card [campaign]="campaign" *ngFor="let campaign of campaigns"></app-campaign-card>
-</div>
+<section class="campaigns">
+    <h3 class="title font-medium container">მსგავსი აქციები</h3>
+    <div class="campaign-carusel container">
+    <div class="campaign-carusel-wrapper">
+        <app-campaign-card [campaign]="campaign" *ngFor="let campaign of campaigns"></app-campaign-card>
+    </div>
+    </div>
+</section>
