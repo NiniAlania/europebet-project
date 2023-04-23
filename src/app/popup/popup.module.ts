@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PopupComponent } from './popup.component';
 import { PopupRoutingModule } from './popup-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { CampaignModule } from '../campaign/campaign.module';
 
 
 
@@ -13,7 +14,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     PopupRoutingModule,
-    SharedModule
+    SharedModule,
+    CampaignModule
   ],
 })
 export class PopupModule { }
