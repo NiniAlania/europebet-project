@@ -1,0 +1,15 @@
+<div class="leaderboard-header">
+    <div>
+        <h5 class="title font-medium">პოზიცია</h5>
+    </div>
+    <div>
+        <h5 class="title font-medium"><span class="voucher"></span>ვაუჩერი</h5>
+    </div>
+    <div>
+        <h5 class="title font-medium">პრიზი</h5>
+    </div>
+</div>
+<div class="leaderboard-body">
+    <app-leaderboard-item *ngFor="let item of items; let i = index" [position]="i + 1" [item]="item">
+    </app-leaderboard-item>
+</div>

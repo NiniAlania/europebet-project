@@ -1,0 +1,21 @@
+.leaderboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leaderboard-header .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.leaderboard-header .title .voucher {
+    background-image: url('/assets/voucher.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 18.66px;
+    height: 12px;
+    display: flex;
+}

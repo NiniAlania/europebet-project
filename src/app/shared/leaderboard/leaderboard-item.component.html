@@ -1,0 +1,11 @@
+<div class="leaderboard-item">
+    <div>
+        <h5 class="title font-medium">{{ position }}</h5>
+    </div>
+    <div>
+        <h5 class="title font-medium">{{ item?.voucher }}</h5>
+    </div>
+    <div>
+        <h5 class="title font-medium"><span class="avatar" [ngStyle]="{ 'background-image': 'url(' + item?.prizeAvatarUrl + ')' }"></span>{{ item?.prize }}</h5>
+    </div>
+</div>

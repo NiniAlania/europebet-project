@@ -1,0 +1,15 @@
+.paragraph {
+    display: flex;
+    align-items: center;
+}
+.paragraph .image {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.paragraph .text {
+    color: #fff;
+}
