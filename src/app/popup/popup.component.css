@@ -1,0 +1,40 @@
+.popup-holder {
+    background: #1c1d1e;
+    position: relative;
+    height: calc(100vh - 70px);
+    scrollbar-width: thin;
+    scrollbar-color: #2C3234 #1C1D1E;
+    overflow-y: scroll;
+}
+
+.description-holder {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description-holder .title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.description-holder .description {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.popup-holder::-webkit-scrollbar {
+    width: 5px;
+    width: 5px;
+}
+
+.popup-holder::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #1C1D1E;
+}
+
+.popup-holder::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #2C3234;
+}
