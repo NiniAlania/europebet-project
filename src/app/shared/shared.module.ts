@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent, FooterComponent } from './layout';
+import { TabModule } from './tab';
 
 
 
@@ -10,11 +11,13 @@ import { HeaderComponent, FooterComponent } from './layout';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TabModule
   ],
   exports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    TabModule
   ]
 })
 export class SharedModule {}
