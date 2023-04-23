@@ -1,0 +1,9 @@
+.info-item .vector {
+    background-image: url('/assets/vector.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    width: 14.98px;
+    height: 14.98px;
+    opacity: 60%;
+    padding-right: 24.46px;
+}

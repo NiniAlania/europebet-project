@@ -4,6 +4,7 @@ import { PopupComponent } from './popup.component';
 import { PopupRoutingModule } from './popup-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CampaignModule } from '../campaign/campaign.module';
+import { InfoModule } from '../info/info.module';
 
 
 
@@ -15,7 +16,8 @@ import { CampaignModule } from '../campaign/campaign.module';
     CommonModule,
     PopupRoutingModule,
     SharedModule,
-    CampaignModule
+    InfoModule,
+    CampaignModule,
   ],
 })
 export class PopupModule { }
