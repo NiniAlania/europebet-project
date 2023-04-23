@@ -5,6 +5,7 @@ import { PopupRoutingModule } from './popup-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CampaignModule } from '../campaign/campaign.module';
 import { InfoModule } from '../info/info.module';
+import { GameStageModule } from '../game-stage/game-stage.module';
 
 
 
@@ -16,6 +17,7 @@ import { InfoModule } from '../info/info.module';
     CommonModule,
     PopupRoutingModule,
     SharedModule,
+    GameStageModule,
     InfoModule,
     CampaignModule,
   ],

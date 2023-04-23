@@ -1,0 +1,5 @@
+<app-tab-group [tabs]="stages" (activeIndexChange)="setActiveStage($event)"></app-tab-group>
+
+<app-cash-games-stage *ngIf="activeIndex == 0"></app-cash-games-stage>
+<app-spring-series-stage *ngIf="activeIndex == 1"></app-spring-series-stage>
+<app-final-stage *ngIf="activeIndex == 2"></app-final-stage>
