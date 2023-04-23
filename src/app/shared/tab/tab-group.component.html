@@ -1,9 +1,7 @@
-<section class="tab-group" >
-    <app-tab
-        *ngFor="let tab of tabs; let i = index"
-        [tab]="tab"
-        [isActive]="activeIndex == i"
-        (click)="setActive(i)"
-    >
-    </app-tab>
+<section class="container tab-group">
+    <div class="tab-group-container">
+        <app-tab *ngFor="let tab of tabs; let i = index" [tab]="tab" [isActive]="activeIndex == i"
+            (click)="setActive(i)">
+        </app-tab>
+    </div>
 </section>

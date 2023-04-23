@@ -1,0 +1,10 @@
+.tab-group {
+    position: relative;
+}
+
+.tab-group-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #2c3234;
+    border-radius: 12px;
+}
