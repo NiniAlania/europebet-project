@@ -1,0 +1,7 @@
+.header .banner {
+    background-image: url('/assets/banner.jpg');
+    background-size: cover;
+    width: 100%;
+    max-width: 940px;
+    height: 350px;
+}

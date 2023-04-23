@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PopupComponent } from './popup.component';
 import { PopupRoutingModule } from './popup-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -11,7 +12,8 @@ import { PopupRoutingModule } from './popup-routing.module';
   ],
   imports: [
     CommonModule,
-    PopupRoutingModule
+    PopupRoutingModule,
+    SharedModule
   ],
 })
 export class PopupModule { }
