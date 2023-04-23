@@ -11,6 +11,7 @@
 .campaigns .campaign-carusel {
     width: 100%;
     overflow: hidden;
+    padding-right: 0;
 }
 
 .campaigns .campaign-carusel .campaign-carusel-wrapper {
@@ -18,5 +19,11 @@
     gap: 20px;
     transition: all 0.2s;
     will-change: transform;
-    cursor: pointer;
+    cursor: grab;
+    overflow: auto;
+    padding-right: 20px;
+}
+
+.campaigns .campaign-carusel .campaign-carusel-wrapper::-webkit-scrollbar {
+    width: 0px;
 }

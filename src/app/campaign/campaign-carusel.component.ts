@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { Campaign } from './campaign.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { Campaign } from './campaign.model';
   templateUrl: './campaign-carusel.component.html',
   styleUrls: ['./campaign-carusel.component.css']
 })
-export class CampaignCaruselComponent {
+export class CampaignCaruselComponent implements OnInit {
   campaigns: Campaign[] = [
     {
       imageUrl: '/assets/campaign1.png',
@@ -46,8 +46,44 @@ export class CampaignCaruselComponent {
     }
   ];
 
-  constructor() { }
+  @ViewChild('slider', { static: true }) sliderRef: ElementRef | undefined;
+
+  isDown = false;
+  startX: number = 0;
+  scrollLeft: number = 0;
+
+  constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
+  }
+
+  onMouseDown(event: MouseEvent) {
+    const slider = this.sliderRef?.nativeElement;
+    this.isDown = true;
+    this.renderer.removeClass(slider, 'active');
+    this.startX = event.pageX - slider.offsetLeft;
+    this.scrollLeft = slider.scrollLeft;
+  }
+
+  onMouseLeave() {
+    const slider = this.sliderRef?.nativeElement;
+    this.isDown = false;
+    this.renderer.removeClass(slider, 'active');
+  }
+
+  onMouseUp() {
+    const slider = this.sliderRef?.nativeElement;
+    this.isDown = false;
+    this.renderer.removeClass(slider, 'active');
+  }
+
+  onMouseMove(event: MouseEvent) {
+    if (this.isDown) {
+      event.preventDefault();
+      const slider = this.sliderRef?.nativeElement;
+      const x = event.pageX - slider.offsetLeft;
+      const walk = x - this.startX;
+      this.renderer.setProperty(slider, 'scrollLeft', this.scrollLeft - walk);
+    }
   }
 }
