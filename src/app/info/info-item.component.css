@@ -1,9 +1,23 @@
-.info-item .vector {
-    background-image: url('/assets/vector.svg');
-    background-repeat: no-repeat;
+.info-item .info-item-header {
+    background-color: #2c3234;
+    padding: 20px 26px;
+    cursor: pointer;
     display: flex;
-    width: 14.98px;
-    height: 14.98px;
-    opacity: 60%;
-    padding-right: 24.46px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.info-item .info-item-header .arrow {
+    transition: .4s all;
+}
+
+.info-item .info-item-header.active .arrow {
+    transform: rotate(180deg);
+}
+
+.info-item .answer {
+    padding: 20px 26px;
+    color: #bbb;
 }

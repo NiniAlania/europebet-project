@@ -1,5 +1,8 @@
-<section class="info-item" (click)="onClick()">
-    <div class="question">{{ info?.question }}</div>
-    <span class="vector"></span>
-    <div [hidden]="hidden" class="answer">{{ info?.answer }}</div>
-</section>
+<div class="info-item">
+    <!-- todo: add active class if open -->
+    <div class="info-item-header" [class.active]="!hidden" (click)="onClick()">
+        <div class="question font-roman">{{ info?.question }}</div>
+        <img src="/assets/vector.svg" class="arrow" />
+    </div>
+    <div [hidden]="hidden" class="answer font-roman">{{ info?.answer }}</div>
+</div>

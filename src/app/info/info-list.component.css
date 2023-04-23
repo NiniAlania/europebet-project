@@ -1,0 +1,9 @@
+.terms-and-conditions {
+    color: #fff;
+}
+
+.terms-and-conditions .info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
