@@ -3,5 +3,129 @@
     background-size: cover;
     width: 100%;
     max-width: 940px;
-    height: 350px;
+    aspect-ratio: 50/19;
+    min-height: 200px;
+}
+
+.header .top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
+}
+
+.header .top-bar .left {
+    background: #25292B;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    padding: 5px;
+    color: #fff;
+    line-height: 14px;
+}
+
+.header .top-bar .left .name {
+    background-color: rgba(255,255,255, 0.4);
+    border-radius: 35px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.header .top-bar .left .date {
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.header .top-bar .right {
+    background: #25292B;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.header .top-bar .right .x-shape {
+    position: relative;
+    display: block;
+    width: 10px;
+    height: 10px;
+}
+
+.header .top-bar .right .x-shape:before,
+.header .top-bar .right .x-shape:after {    
+    content: "";
+    height: 2px;
+    width: 14px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+}
+
+.header .top-bar .right .x-shape:before {
+    transform: rotate(45deg);
+    transform-origin: left;
+    left: 0;
+}
+
+.header .top-bar .right .x-shape:after {
+    transform: rotate(-45deg);
+    transform-origin: right;;
+    right: 0;
+}
+
+.header .mobile-top-bar {
+    display: none;
+    padding: 16px;
+}
+
+.header .mobile-top-bar .logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #F05A22;
+}
+
+.header .mobile-top-bar .user-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .mobile-top-bar .user-options .sign-up,
+.header .mobile-top-bar .user-options .sign-in {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+}
+
+.header .mobile-top-bar .user-options .sign-in {
+    background-color: #EF602A;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        position: relative;
+        margin-bottom: 54px;
+    }
+
+    .header .top-bar .right {
+        display: none;
+    }
+
+    .header .top-bar .left {
+        position: absolute;
+        top: calc(100% + 20px);
+        left: 0;
+    }
+
+    .header .mobile-top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
