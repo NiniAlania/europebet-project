@@ -1,4 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
 * {
     box-sizing: border-box;
+    user-select: none;
+}
+
+/* Copied fonts from europe-bet website. */
+@font-face {
+    font-family: Helvetica-Roman;
+    src: url("/assets/fonts/NovemberGeLC-Regular.woff2") format("woff2"),
+        url("/assets/fonts/NovemberGeLC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Helvetica-Medium;
+    src:
+        url("/assets/fonts/NovemberGeLC-Medium.woff2") format("woff2"),
+        url("/assets/fonts/NovemberGeLC-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Helvetica-Bold;
+    src:
+        url("/assets/fonts/NovemberGeLC-Bold.woff2") format("woff2"),
+        url("/assets/fonts/NovemberGeLC-Bold.ttf") format("truetype");
+}
+
+/* Copied fonts from europe-bet website. */
+.font-medium {
+    font-family: 'Helvetica-Medium', Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.font-bold {
+    font-family: 'Helvetica-Bold', Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.font-roman {
+    font-family: 'Helvetica-Roman', Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.font-uppercase {
+    text-transform: uppercase;
+    font-feature-settings: "case" on;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #0a0a0a;
+}
+
+body {
+    max-width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #1c1d1e;
+}
+
+.container {
+    padding-left: 43px;
+    padding-right: 43px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
