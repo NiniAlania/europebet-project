@@ -1,0 +1,29 @@
+.cash-games-stage {
+  display: block;
+  margin-top: 30px;
+}
+
+.cash-games-stage .title {
+  color: #fff;
+}
+
+.cash-games-stage .content .table-title {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .cash-games-stage .content .table-title {
+    font-size: 16px;
+  }
+}
+
+.cash-games-stage .content .table-title .info-icon {
+  margin-left: 12px;
+}

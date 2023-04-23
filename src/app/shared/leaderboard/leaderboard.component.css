@@ -1,21 +1,65 @@
-.leaderboard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.leaderboard {
+  padding-right: 14px;
 }
 
-.leaderboard-header .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
+.leaderboard .leaderboard-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 18px;
 }
 
-.leaderboard-header .title .voucher {
-    background-image: url('/assets/voucher.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 18.66px;
-    height: 12px;
-    display: flex;
+.leaderboard .leaderboard-header .title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  color: #7D7D7D;
+  font-size: 15px;
+}
+
+.leaderboard .leaderboard-header .title.left {
+  justify-self: start;
+  padding-left: 10px;
+}
+
+.leaderboard .leaderboard-header .title .voucher {
+  width: 19px;
+  height: 12px;
+  margin-right: 7px;
+}
+
+.leaderboard .leaderboard-body {
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 14px;
+}
+
+@media (max-width: 768px) {
+  .leaderboard {
+    padding-right: 7px;
+  }
+
+  .leaderboard .leaderboard-body {
+    padding-right: 7px;
+  }
+
+}
+
+.leaderboard .leaderboard-body {
+  scrollbar-width: thin;
+  scrollbar-color: #F05A22 #2C3234;
+}
+
+.leaderboard .leaderboard-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.leaderboard .leaderboard-body::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #2C3234;
+}
+
+.leaderboard .leaderboard-body::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #F05A22;
 }

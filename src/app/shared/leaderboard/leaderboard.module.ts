@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { LeaderboardItemComponent } from './leaderboard-item.component';
 import { LeaderboardComponent } from './leaderboard.component';
 
@@ -10,9 +10,10 @@ import { LeaderboardComponent } from './leaderboard.component';
     LeaderboardItemComponent,
     LeaderboardComponent
   ],
-  imports: [
-    CommonModule
-  ],
+    imports: [
+        CommonModule,
+        NgOptimizedImage
+    ],
   exports: [
     LeaderboardComponent
   ]

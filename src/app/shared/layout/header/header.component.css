@@ -55,7 +55,7 @@
 }
 
 .header .top-bar .right .x-shape:before,
-.header .top-bar .right .x-shape:after {    
+.header .top-bar .right .x-shape:after {
     content: "";
     height: 2px;
     width: 14px;
@@ -113,7 +113,11 @@
         margin-bottom: 54px;
     }
 
-    .header .top-bar .right {
+  .header .top-bar {
+    position: unset;
+  }
+
+  .header .top-bar .right {
         display: none;
     }
 

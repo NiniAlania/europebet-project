@@ -3,9 +3,6 @@
     <div class="campaign-carusel container">
     <div class="campaign-carusel-wrapper" #slider
         (mousedown)="onMouseDown($event)"
-        (mouseleave)="onMouseLeave()"
-        (mouseup)="onMouseUp()"
-        (mousemove)="onMouseMove($event)"
     >
         <app-campaign-card [campaign]="campaign" *ngFor="let campaign of campaigns"></app-campaign-card>
     </div>

@@ -1,12 +1,19 @@
-<app-border>
-    <div bar>
-    </div>
-    <div content>
-        <app-leaderboard [items]="items"></app-leaderboard>
-        <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
-        </app-paragraph>
-        <app-leaderboard [items]="items"></app-leaderboard>
-        <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
-        </app-paragraph>
-    </div>-
+<app-border class="cash-games-stage container">
+  <div class="title font-bold font-uppercase" bar>
+    1₾ რეიკი = 1 ქულას
+  </div>
+  <div class="content" content>
+    <h3 class="table-title font-bold">ჰოლდემის TOP20 ლიდერბორდი
+      <img ngSrc="/assets/info.png" class="info-icon" alt="Info Icon" height="24" width="24">
+    </h3>
+    <app-leaderboard [items]="items"></app-leaderboard>
+    <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+    </app-paragraph>
+    <h3 class="table-title font-bold">TOP20 ლიდერბორდი ჰოლდემში
+      <img ngSrc="/assets/info.png" class="info-icon" alt="Info Icon" height="24" width="24">
+    </h3>
+    <app-leaderboard [items]="items"></app-leaderboard>
+    <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+    </app-paragraph>
+  </div>
 </app-border>

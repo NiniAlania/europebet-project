@@ -52,7 +52,8 @@ export class CampaignCaruselComponent implements OnInit {
   startX: number = 0;
   scrollLeft: number = 0;
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2) {
+  }
 
   ngOnInit(): void {
   }
@@ -60,23 +61,16 @@ export class CampaignCaruselComponent implements OnInit {
   onMouseDown(event: MouseEvent) {
     const slider = this.sliderRef?.nativeElement;
     this.isDown = true;
-    this.renderer.removeClass(slider, 'active');
     this.startX = event.pageX - slider.offsetLeft;
     this.scrollLeft = slider.scrollLeft;
   }
 
-  onMouseLeave() {
-    const slider = this.sliderRef?.nativeElement;
-    this.isDown = false;
-    this.renderer.removeClass(slider, 'active');
-  }
-
+  @HostListener('document:mouseup')
   onMouseUp() {
-    const slider = this.sliderRef?.nativeElement;
     this.isDown = false;
-    this.renderer.removeClass(slider, 'active');
   }
 
+  @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent) {
     if (this.isDown) {
       event.preventDefault();

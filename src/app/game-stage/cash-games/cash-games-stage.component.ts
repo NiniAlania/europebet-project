@@ -37,6 +37,86 @@ export class CashGamesStageComponent {
       voucher: '800₾',
       prize: 'სპეც. ტურნირის ბილეთი',
       prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1200₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1000₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '800₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1200₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1000₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '800₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1000₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '800₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1200₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1000₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '800₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1000₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '800₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1200₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '1000₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
+    },
+    {
+      voucher: '800₾',
+      prize: 'სპეც. ტურნირის ბილეთი',
+      prizeAvatarUrl: ''
     }
   ];
 
@@ -54,5 +134,5 @@ export class CashGamesStageComponent {
       text: 'ტექნიკის მაღაზიის ვაუჩერი'
     }
   ];
-  
+
 }
