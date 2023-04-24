@@ -1,0 +1,185 @@
+.promo {
+  margin-top: 30px;
+}
+
+.promo .title {
+  color: #fff;
+}
+
+.promo .content {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.promo .content .upper-content,
+.promo .content .bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .promo .content .upper-content {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: #171718;
+    border-radius: 16px;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .promo .content .bottom-content {
+    position: relative;
+    background-color: #2C3234;
+    width: 100%;
+    z-index: 3;
+    padding-bottom: 20px;
+  }
+
+  .promo .content .bottom-content:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 16px;
+    background-color: #2C3234;
+  }
+}
+
+.promo .content .title {
+  color: #fff;
+  font-size: 16px;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.promo .content .text {
+  color: #fff;
+  opacity: 0.9;
+  margin-top: 12px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.promo .content .button {
+  border-radius: 5px;
+  background-color: #F05A22;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 7px 18px;
+  margin-top: 16px;
+}
+
+.promo .content .clock {
+  border: 2px solid #F05A22;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  align-items: center;
+  box-shadow: inset 0 0 12px rgba(240, 90, 34, 0.7), 0 0 12px rgba(240, 90, 34, 0.7);
+}
+
+.promo .content .clock .clock-icon-holder {
+  display: flex;
+  background-color: #F05A22;
+  padding: 5px 0 5px 5px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.promo .content .clock .clock-icon-holder:before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  border-radius: 0 100% 100% 0 / 50%;
+  top: 0;
+  left: 100%;
+  background-color: #F05A22;
+}
+
+.promo .content .clock .clock-icon-holder .clock-icon {
+  position: relative;
+  z-index: 5;
+  width: 20px;
+  height: 20px;
+}
+
+.promo .content .clock .clock-text {
+  color: #fff;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.promo .content .promo-left-img-m,
+.promo .content .promo-right-img-m {
+  display: none;
+}
+
+.promo .content .promo-left-img,
+.promo .content .promo-left-img-m {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.promo .content .promo-right-img,
+.promo .content .promo-right-img-m {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .promo .content .promo-left-img,
+  .promo .content .promo-right-img {
+    display: none;
+  }
+
+  .promo .content .promo-left-img-m,
+  .promo .content .promo-right-img-m {
+    display: block;
+  }
+}
+
+.daily-tournaments .daily-tournaments-content {
+  background-color: #171718;
+  border: 4px solid #25292B;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.daily-tournaments .daily-tournaments-content .title {
+  color: #fff;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-lg {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+.daily-tournaments .daily-tournaments-content .bottom-text {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}

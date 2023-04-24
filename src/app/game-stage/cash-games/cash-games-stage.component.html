@@ -1,4 +1,4 @@
-<app-border class="cash-games-stage container">
+<app-border class="cash-games-stage first-two-tab container">
   <div class="title font-bold font-uppercase" bar>
     1₾ რეიკი = 1 ქულას
   </div>
@@ -7,7 +7,7 @@
       <img ngSrc="/assets/info.png" class="info-icon" alt="Info Icon" height="24" width="24">
     </h3>
     <app-leaderboard [items]="items"></app-leaderboard>
-    <div class="tab-content paragraph">
+    <div class="tab-content paragraph-holder">
       <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
       </app-paragraph>
     </div>
@@ -15,7 +15,7 @@
       <img ngSrc="/assets/info.png" class="info-icon" alt="Info Icon" height="24" width="24">
     </h3>
     <app-leaderboard [items]="items"></app-leaderboard>
-    <div class="tab-content paragraph">
+    <div class="tab-content paragraph-holder">
       <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
       </app-paragraph>
     </div>

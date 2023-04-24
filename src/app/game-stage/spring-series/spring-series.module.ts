@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { SpringSeriesStageComponent } from './spring-series-stage.component';
 
@@ -9,10 +9,11 @@ import { SpringSeriesStageComponent } from './spring-series-stage.component';
   declarations: [
     SpringSeriesStageComponent
   ],
-  imports: [
-    CommonModule,
-    SharedModule
-  ],
+    imports: [
+        CommonModule,
+        SharedModule,
+        NgOptimizedImage
+    ],
   exports: [
     SpringSeriesStageComponent
   ]

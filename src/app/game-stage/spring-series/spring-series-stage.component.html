@@ -1,1 +1,89 @@
-<p>spring-series-stage works!</p>
+<section class="spring-sales container">
+  <div class="promo">
+    <app-border>
+      <div class="title font-bold font-uppercase" bar>
+        ტურნირები და სატელიტები
+      </div>
+      <div class="content" content>
+        <div class="upper-content">
+          <h3 class="title font-bold">
+            სერიის ფარგლებში, ყოველდღიურად გაიმართება 3 ივენთი:
+          </h3>
+          <div class="clock">
+            <div class="clock-icon-holder">
+              <img src="/assets/clock.svg" class="clock-icon" alt="Clock Icon">
+            </div>
+            <div class="clock-text font-medium">
+              19:00 / 19:30 / 20:00
+            </div>
+          </div>
+          <img src="/assets/promo-left-img.png" class="promo-left-img" alt="Promo Left Image">
+          <img src="/assets/promo-right-img.png" class="promo-right-img" alt="Promo Right Image">
+          <img src="/assets/promo-left-img-m.png" class="promo-left-img-m" alt="Promo Left Image">
+          <img src="/assets/promo-right-img-m.png" class="promo-right-img-m" alt="Promo Right Image">
+        </div>
+        <div class="bottom-content">
+          <p class="text font-roman">
+            * ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან.
+          </p>
+          <p class="text font-roman">
+            ტურნირების სრული განრიგის სანახავად გადადი<br/>პოკერის ლობიში
+          </p>
+          <a href="#" class="button font-bold">პოკერის ლობი</a>
+        </div>
+      </div>
+    </app-border>
+  </div>
+</section>
+
+<app-border class="first-two-tab container">
+  <div class="title font-bold font-uppercase" bar>
+    ᲛᲝᲮᲕᲓᲘ TOP20 ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲨᲘ ᲢᲣᲠᲜᲘᲠᲔᲑᲖᲔ ᲓᲐᲒᲠᲝᲕᲔᲑᲣᲚᲘ ᲥᲣᲚᲔᲑᲘᲗ
+  </div>
+  <div class="content" content>
+    <button class="table-button font-medium">
+      ქულების დაგროვების მექანიკა
+      <img src="/assets/dropdown-icon.png" class="dropdown-icon" alt="Dropdown Icon">
+    </button>
+    <app-leaderboard [items]="items"></app-leaderboard>
+    <div class="tab-content paragraph-holder">
+      <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+      </app-paragraph>
+    </div>
+    <div class="bottom-text font-medium">
+      * ლიდერბორდის შედეგები განახლდება <a href="#" class="bottom-text-link">პოკერის
+      ლობიში</a>
+    </div>
+    <div class="bottom-text font-medium">
+      * სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და სატელიტები
+    </div>
+  </div>
+</app-border>
+
+<section class="daily-tournaments container">
+  <div class="daily-tournaments-content">
+    <h3 class="title font-bold font-uppercase">ᲧᲝᲕᲔᲚᲓᲦᲘᲣᲠᲘ ᲢᲣᲠᲜᲘᲠᲔᲑᲘ ᲓᲐ ᲡᲐᲢᲔᲚᲘᲢᲔᲑᲘ</h3>
+    <div class="banner-grid">
+      <div class="banner-item banner-sm">
+        <img src="/assets/banner-sm.png" class="banner-sm" alt="Banner Sm">
+      </div>
+      <div class="banner-item banner-sm">
+        <img src="/assets/banner-sm.png" class="banner-sm" alt="Banner Sm">
+      </div>
+      <div class="banner-item banner-lg">
+        <img src="/assets/banner-lg.png" class="banner-lg" alt="Banner Lg">
+      </div>
+    </div>
+    <div class="bottom-text font-roman">
+      * სამივე ტურნირის გამარჯვებულები მიიღებენ ბეჭდებს და ფინალურ ეტაპზე, The Lord of the Rings ტურნირზე, იბრძოლებენ The Festival in Malta-ს საგზურის მისაღებად.
+    </div>
+  </div>
+</section>
+
+<section class="container additional-information">
+  <div class="additional-information-content">
+    <h4 class="title font-bold font-uppercase">ᲓᲐᲛᲐᲢᲔᲑᲘᲗ ᲨᲔᲓᲒᲔᲑᲐ, ᲥᲔᲨᲒᲔᲘᲛᲘᲡ, ᲢᲣᲠᲜᲘᲠᲔᲑᲘᲡ ᲓᲐ ᲡᲞᲘᲜ ᲞᲝᲙᲔᲠᲘᲡ 12 SIDE
+      ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲘ</h4>
+    <p class="text font-roman">* Side ლიდერბორდების შესახებ დეტალური ინფორმაცია იხილეთ პოკერის ლობიში.</p>
+  </div>
+</section>
