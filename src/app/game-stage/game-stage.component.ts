@@ -22,7 +22,7 @@ export class GameStageComponent {
     }
   ];
 
-  activeIndex: number = 1;
+  activeIndex: number = 0;
 
   setActiveStage(index: number): void {
     this.activeIndex = index;

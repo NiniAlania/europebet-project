@@ -15,6 +15,14 @@
   position: relative;
 }
 
+.promo .content .upper-content {
+  padding-top: 20px;
+}
+
+.promo .content .bottom-content {
+  padding-bottom: 20px;
+}
+
 .promo .content .upper-content,
 .promo .content .bottom-content {
   display: flex;
@@ -26,7 +34,6 @@
 @media (max-width: 768px) {
   .promo .content .upper-content {
     position: relative;
-    padding-top: 20px;
     padding-bottom: 40px;
     background-color: #171718;
     border-radius: 16px;
@@ -37,9 +44,9 @@
   .promo .content .bottom-content {
     position: relative;
     background-color: #2C3234;
+    font-size: 13px;
     width: 100%;
     z-index: 3;
-    padding-bottom: 20px;
   }
 
   .promo .content .bottom-content:before {
@@ -173,8 +180,131 @@
   gap: 16px;
 }
 
-.daily-tournaments .daily-tournaments-content .banner-grid .banner-lg {
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item {
+  position: relative;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item.banner-lg {
   grid-area: 2 / 1 / 3 / 3;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .banner {
+  width: 100%;
+  min-height: 105px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 16px;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-right: 70px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .left,
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .left .title {
+  margin: 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .left .prize {
+  margin: 10px 0 0;
+  font-size: 24px;
+  color: #FFBE00;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .right .title {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+}
+
+.daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .right .bubble {
+  margin: 10px 0 0;
+  padding: 5px 20px;
+  border-radius: 15px 15px 0 15px;
+  background-color: #B78648;
+  color: #FFBE00;
+  text-align: center;
+}
+
+@media (min-width: 767px) {
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg .left,
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg .right {
+    max-width: 200px;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg {
+    padding-right: 20px;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg .left .title {
+    font-size: 22px;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg .left .prize {
+    text-align: center;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg .right .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .daily-tournaments .daily-tournaments-content {
+    padding: 0;
+    border: none;
+    background: none;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item {
+    height: 100px;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .banner {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item.banner-lg {
+    grid-area: auto;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .left .title {
+    font-size: 14px;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay.lg .right .title {
+    font-size: 12px;
+  }
+
+  .daily-tournaments .daily-tournaments-content .banner-grid .banner-item .overlay .right .bubble {
+    font-size: 14px;
+  }
 }
 
 .daily-tournaments .daily-tournaments-content .bottom-text {
