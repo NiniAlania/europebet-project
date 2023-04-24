@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { HeaderComponent, FooterComponent } from './layout';
 import { TabModule } from './tab';
 import { BorderComponent } from './border';
@@ -15,11 +15,12 @@ import { ParagraphComponent } from './paragraph';
     BorderComponent,
     ParagraphComponent,
   ],
-  imports: [
-    CommonModule,
-    TabModule,
-    LeaderboardModule
-  ],
+    imports: [
+        CommonModule,
+        TabModule,
+        LeaderboardModule,
+        NgOptimizedImage
+    ],
   exports: [
     FooterComponent,
     HeaderComponent,

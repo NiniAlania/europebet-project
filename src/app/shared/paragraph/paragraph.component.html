@@ -1,4 +1,4 @@
 <div class="paragraph">
-    <span class="image" [ngStyle]="{ 'background-image': 'url(' + imageUrl + ')' }"></span>
-    <h2 class="text">{{ text }}</h2>
+  <img [ngSrc]="imageUrl" class="image" [alt]="text" width="30" height="30"/>
+  <p class="text font-roman">{{ text }}</p>
 </div>

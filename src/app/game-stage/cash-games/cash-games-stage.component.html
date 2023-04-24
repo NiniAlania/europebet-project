@@ -7,13 +7,29 @@
       <img ngSrc="/assets/info.png" class="info-icon" alt="Info Icon" height="24" width="24">
     </h3>
     <app-leaderboard [items]="items"></app-leaderboard>
-    <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
-    </app-paragraph>
+    <div class="tab-content paragraph">
+      <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+      </app-paragraph>
+    </div>
     <h3 class="table-title font-bold">TOP20 ლიდერბორდი ჰოლდემში
       <img ngSrc="/assets/info.png" class="info-icon" alt="Info Icon" height="24" width="24">
     </h3>
     <app-leaderboard [items]="items"></app-leaderboard>
-    <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
-    </app-paragraph>
+    <div class="tab-content paragraph">
+      <app-paragraph *ngFor="let paragraph of paragraphs" [text]="paragraph.text" [imageUrl]="paragraph.imageUrl">
+      </app-paragraph>
+    </div>
+    <div class="bottom-text font-medium">
+      * ლიდერბორდის შედეგები განახლდება <a href="#" class="bottom-text-link">პოკერის
+      ლობიში</a>
+    </div>
   </div>
 </app-border>
+
+<section class="container additional-information">
+  <div class="additional-information-content">
+    <h4 class="title font-bold font-uppercase">ᲓᲐᲛᲐᲢᲔᲑᲘᲗ ᲨᲔᲓᲒᲔᲑᲐ, ᲥᲔᲨᲒᲔᲘᲛᲘᲡ, ᲢᲣᲠᲜᲘᲠᲔᲑᲘᲡ ᲓᲐ ᲡᲞᲘᲜ ᲞᲝᲙᲔᲠᲘᲡ 12 SIDE
+      ᲚᲘᲓᲔᲠᲑᲝᲠᲓᲘ</h4>
+    <p class="text font-roman">* Side ლიდერბორდების შესახებ დეტალური ინფორმაცია იხილეთ პოკერის ლობიში.</p>
+  </div>
+</section>
