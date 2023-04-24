@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { CashGamesStageComponent } from './cash-games-stage.component';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 
 
@@ -9,11 +9,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
   declarations: [
     CashGamesStageComponent
   ],
-    imports: [
-        CommonModule,
-        SharedModule,
-        NgOptimizedImage
-    ],
+  imports: [
+    CommonModule,
+    SharedModule,
+    NgOptimizedImage
+  ],
   exports: [
     CashGamesStageComponent
   ]

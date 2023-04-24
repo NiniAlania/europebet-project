@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PopupComponent } from './popup.component';
 import { PopupRoutingModule } from './popup-routing.module';
-import { SharedModule } from '../shared/shared.module';
-import { CampaignModule } from '../campaign/campaign.module';
-import { InfoModule } from '../info/info.module';
-import { GameStageModule } from '../game-stage/game-stage.module';
+import { SharedModule } from '../shared';
+import { CampaignModule } from '../campaign';
+import { InfoModule } from '../info';
+import { GameStageModule } from '../game-stage';
 
 
 
