@@ -1,0 +1,135 @@
+.final-stage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.final-stage {
+  background-color: #171718;
+  border: 4px solid #25292B;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-stage .final-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.final-stage .title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.final-stage .title-container .title,
+.final-stage .title-container .description {
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
+.cards-title {
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .cards-title {
+    font-size: 16px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .cards-content {
+    background: #25292B;
+  }
+}
+
+.cards-container .first-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.cards-container .second-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards-text {
+  padding: 0 20px 20px;
+  margin: 0;
+}
+
+.cards-text p {
+  color: #fff;
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cards-text p:first-child {
+  margin-bottom: 12px;
+}
+
+.magic-key {
+  margin-top: 20px;
+}
+
+.magic-key .magic-key-content {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .magic-key .magic-key-content {
+    background: #25292B;
+  }
+}
+
+.magic-key .magic-key-content .description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}

@@ -1,7 +1,7 @@
 <div class="card">
-    <img ngSrc=""/>
-    <div class="title">{{ title }}</div>
-    <div class="content">
-        <ng-content></ng-content>
-    </div>
+  <img class="icon" [src]="image" [alt]="title"/>
+  <h3 class="title font-bold">{{ title }}</h3>
+  <div class="content font-medium">
+    <ng-content></ng-content>
+  </div>
 </div>

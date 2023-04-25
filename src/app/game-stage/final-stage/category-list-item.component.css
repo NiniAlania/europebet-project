@@ -1,0 +1,17 @@
+.category-list-item {
+  display: flex;
+  background: #1C1D1E;
+  border-radius: 10px;
+  color: #fff;
+  padding: 12px 8px;
+  gap: 8px;
+  align-items: center;
+}
+
+.category-list-item .category-list-icon {
+  width: 32px;
+}
+
+.category-list-item .text {
+  font-size: 13px;
+}

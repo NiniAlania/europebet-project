@@ -9,5 +9,4 @@ import { CategoryListItem } from './category-list-item.model';
 export class CategoryListComponent {
   @Input() title: string = '';
   @Input() items: CategoryListItem[] = [];
-
 }

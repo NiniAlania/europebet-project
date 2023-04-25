@@ -1,0 +1,32 @@
+.card {
+  background: #1E2122;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  height: 100%;
+}
+
+.card .icon {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.card .title {
+  color: #fff;
+  margin: 0;
+}
+
+.card .content {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.card .content /deep/ p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}

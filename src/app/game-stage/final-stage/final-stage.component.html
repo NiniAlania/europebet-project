@@ -1,32 +1,83 @@
-<img ngSrc="/assets/final-info-img.jpg"/>
+<div class="container final-stage-container">
+  <div class="final-stage">
+    <img src="/assets/final-info-img.jpg" class="final-image" alt="Final Info Image"/>
+    <div class="title-container">
+      <h2 class="title font-bold font-uppercase">გაემგზავრე THE FESTIVAL IN MALTA-ზე</h2>
+      <h4 class="description font-bold">The Festival სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს პოკერის
+        მოთამაშეებს
+        დაუვიწყარი მოგზაურობის შანსს.</h4>
+    </div>
 
-<app-category-list [title]="'A კატეგორიის საგზურში შედის'" [items]="categoryListItems"></app-category-list>
+    <app-paragraph [text]="'15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტივალს უმასპინძლებს'"></app-paragraph>
 
-<app-category-list [title]="'A კატეგორიის საგზურში შედის'" [items]="categoryListItems"></app-category-list>
+    <div class="table-container">
+      <app-category-list [title]="'A კატეგორიის საგზურში შედის'" [items]="categoryListItems"></app-category-list>
 
-<app-category-list [title]="'A კატეგორიის საგზურში შედის'" [items]="categoryListItems"></app-category-list>
+      <app-category-list [title]="'B კატეგორიის საგზურში შედის'" [items]="categoryListItems"></app-category-list>
 
-<app-card [title]="'“Cashgame Highrollers” -'" [image]="'/assets/poker-item-1-ticket-icon.png'">
-    <p>1 საგზური</p>
-</app-card>
+      <app-category-list [title]="'C კატეგორიის საგზურში შედის'" [items]="categoryListItems"></app-category-list>
+    </div>
+  </div>
 
-<app-card [title]="'„Cashgame Grinders”'" [image]="'/assets/poker-item-1-ticket-icon.png'">
-    <p>1 საგზური</p>
-</app-card>
+  <app-border>
+    <div bar>
+      <h2 class="cards-title font-bold font-uppercase">
+        ᲛᲝᲘᲒᲔ ᲡᲐᲒᲖᲣᲠᲘ 30 ᲐᲞᲠᲘᲚᲘᲡ ᲤᲘᲜᲐᲚᲣᲠ ᲢᲣᲠᲜᲘᲠᲔᲑᲖᲔ
+      </h2>
+    </div>
 
-<app-card [title]="'„Tournament Sharks“ -'" [image]="'/assets/poker-item-1-ticket-icon.png'">
-    <p>1 საგზური</p>
-</app-card>
+    <div class="cards-content" content>
+      <div class="cards-container">
+        <div class="first-column">
+          <app-card style="flex-grow: 1;" [title]="'“Cashgame Highrollers” -'"
+                    [image]="'/assets/poker-item-1-ticket-icon.png'">
+            <p>1 საგზური</p>
+          </app-card>
 
-<app-card [title]="'„The Festival in Malta, GTD“'" [image]="'/assets/poker-item-2-ticket-icon.png'">
-    <p>A კატეგორიის 1 საგზური</p>
-    <p>B კატეგორიის 1 საგზური</p>
-    <p>ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.</p>
-</app-card>
+          <app-card style="flex-grow: 1;" [title]="'„Cashgame Grinders”'"
+                    [image]="'/assets/poker-item-1-ticket-icon.png'">
+            <p>1 საგზური</p>
+          </app-card>
 
-<app-card [title]="'„The Lord of the Rings“'" [image]="'/assets/poker-item-1-ticket-icon.png'">
-    <p>C კატეგორიის 1 საგზური</p>
-    <p>ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.</p>
-</app-card>
+          <app-card style="flex-grow: 1;" [title]="'„Tournament Sharks“ -'"
+                    [image]="'/assets/poker-item-1-ticket-icon.png'">
+            <p>1 საგზური</p>
+          </app-card>
+        </div>
 
-<app-key-list [items]="keyListItems"></app-key-list>
+        <div class="second-column">
+          <app-card style="flex-grow: 1;" [title]="'„The Festival in Malta, GTD“'"
+                    [image]="'/assets/poker-item-2-ticket-icon.png'">
+            <p>A კატეგორიის 1 საგზური</p>
+            <p>B კატეგორიის 1 საგზური</p>
+            <p>ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.</p>
+          </app-card>
+
+          <app-card style="flex-grow: 1;" [title]="'„The Lord of the Rings“'"
+                    [image]="'/assets/poker-item-1-ticket-icon.png'">
+            <p>C კატეგორიის 1 საგზური</p>
+            <p>ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.</p>
+          </app-card>
+        </div>
+      </div>
+
+      <div class="cards-text">
+        <p class="font-roman">* თუ მოთამაშე მოიგებს ბეჭედს ორჯერ ან მეტჯერ, ის The Lord of the Rings ტურნირზემოხვდება
+          ბეჭდების შესაბამისი
+          რაოდენობის სტეკით.</p>
+        <p class="font-roman">*ტურნირში მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი ბაი-ინის გადახდით.</p>
+      </div>
+    </div>
+  </app-border>
+
+  <app-border class="magic-key">
+    <div bar>
+      <img src="/assets/magic-key.png" alt="magic key">
+    </div>
+
+    <div class="magic-key-content" content>
+      <p class="description font-medium">მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ საიდუმლო გასაღებს</p>
+      <app-key-list [items]="keyListItems"></app-key-list>
+    </div>
+  </app-border>
+</div>

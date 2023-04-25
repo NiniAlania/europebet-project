@@ -1,0 +1,21 @@
+.key-list-item {
+  display: flex;
+  background-color: #1E2122;
+  border: 2px solid #2C3234;
+  margin-bottom: 2px;
+  border-radius: 76px;
+  padding: 14px 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.key-list-item .position {
+  background-color: #2C3234;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #2C3234;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

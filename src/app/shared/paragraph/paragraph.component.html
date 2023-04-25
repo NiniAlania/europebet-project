@@ -1,4 +1,4 @@
 <div class="paragraph">
-  <img [ngSrc]="imageUrl" class="image" [alt]="text" width="30" height="30"/>
+  <img *ngIf="imageUrl" [ngSrc]="imageUrl" class="image" [alt]="text" width="30" height="30"/>
   <p class="text font-roman">{{ text }}</p>
 </div>

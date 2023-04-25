@@ -1,4 +1,4 @@
 <div class="category-list-item">
-    <img ngSrc="item?.imageUrl ?? ''"/>
-    <div class="text">{{ item?.text }}</div>
+  <img class="category-list-icon" [src]="item?.imageUrl ?? ''" [alt]="item?.text ?? ''"/>
+  <div class="font-roman text">{{ item?.text }}</div>
 </div>

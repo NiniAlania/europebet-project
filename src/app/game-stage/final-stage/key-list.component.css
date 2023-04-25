@@ -1,0 +1,34 @@
+.key-list {
+  padding: 22px;
+  background: #25292B;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .key-list {
+    padding: 0;
+  }
+}
+
+.key-list .key-list-container {
+  scrollbar-width: thin;
+  scrollbar-color: #F05A22 #2C3234;
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 14px;
+}
+
+.key-list .key-list-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.key-list .key-list-container::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #2C3234;
+}
+
+.key-list .key-list-container::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #F05A22;
+}
+
