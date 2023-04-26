@@ -1,33 +1,60 @@
 .campaign-card {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 280px;
-    height: 300px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 280px;
+  height: 300px;
 }
 
 .campaign-card .overlay {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 19px 24px;
-    color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 19px 24px;
+  color: #fff;
 }
 
 .campaign-card .overlay .title {
-    font-size: 14px;
-    margin: 0;
-    margin-bottom: 8px;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .campaign-card .overlay .description {
-    margin: 0;
-    font-size: 14px;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .campaign-card {
+    width: 155px;
+    height: 180px;
+  }
+
+  .campaign-card .overlay {
+    padding: 14px 17px;
+  }
+
+  .campaign-card .overlay .title {
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .campaign-card .overlay .description {
+    font-size: 11px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }

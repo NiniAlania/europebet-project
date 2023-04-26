@@ -1,29 +1,40 @@
 .campaigns {
-    padding-top: 56px;
-    padding-bottom: 56px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .campaigns .title {
-    margin-top: 0;
-    color: #fff;
+  margin-top: 0;
+  color: #fff;
 }
 
 .campaigns .campaign-carusel {
-    width: 100%;
-    overflow: hidden;
-    padding-right: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-right: 0;
 }
 
 .campaigns .campaign-carusel .campaign-carusel-wrapper {
-    display: flex;
-    gap: 20px;
-    transition: all 0.2s;
-    will-change: transform;
-    cursor: grab;
-    overflow: auto;
-    padding-right: 20px;
+  display: flex;
+  gap: 20px;
+  transition: all 0.2s;
+  will-change: transform;
+  cursor: grab;
+  overflow: auto;
+  padding-right: 20px;
 }
 
 .campaigns .campaign-carusel .campaign-carusel-wrapper::-webkit-scrollbar {
-    width: 0px;
+  width: 0px;
+}
+
+@media (max-width: 768px) {
+  .campaigns .title.font-medium {
+    font-size: 16px;
+  }
+
+  .campaigns .campaign-carusel .campaign-carusel-wrapper {
+    gap: 16px;
+    padding-right: 16px;
+  }
 }

@@ -158,6 +158,10 @@
   }
 }
 
+.daily-tournaments {
+  margin-top: 24px;
+}
+
 .daily-tournaments .daily-tournaments-content {
   background-color: #171718;
   border: 4px solid #25292B;
@@ -269,6 +273,10 @@
 }
 
 @media (max-width: 768px) {
+  .daily-tournaments .daily-tournaments-content .title {
+    font-size: 14px;
+    text-align: left;
+  }
   .daily-tournaments .daily-tournaments-content {
     padding: 0;
     border: none;

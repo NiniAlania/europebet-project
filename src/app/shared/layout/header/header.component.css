@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 10px 20px;
+  padding: 10px 23px;
   z-index: 99;
 }
 
@@ -125,7 +125,7 @@
   .header .top-bar .left {
     position: absolute;
     top: calc(100% + 20px);
-    left: 0;
+    left: 16px;
   }
 
   .header .mobile-top-bar {

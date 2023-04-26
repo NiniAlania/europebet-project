@@ -19,3 +19,13 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .key-list-item .position {
+    font-size: 10px;
+  }
+
+  .key-list-item .text {
+    font-size: 12px;
+  }
+}

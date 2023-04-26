@@ -22,3 +22,17 @@
   padding: 20px 26px;
   color: #bbb;
 }
+
+@media (max-width: 768px) {
+  .info-item .info-item-header {
+    padding: 7px 14px;
+    gap: 10px;
+    min-height: 50px;
+  }
+
+  .info-item .info-item-header .question,
+  .info-item .answer {
+    font-size: 14px;
+    color: #BBBBBB;
+  }
+}
