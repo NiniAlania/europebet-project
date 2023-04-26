@@ -21,5 +21,8 @@ import { GameStageModule } from '../game-stage';
     InfoModule,
     CampaignModule,
   ],
+  exports: [
+    PopupComponent
+  ]
 })
 export class PopupModule { }
